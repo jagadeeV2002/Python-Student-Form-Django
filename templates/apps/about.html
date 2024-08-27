@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome VJ</h1>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <img src="{% static 'images/school-building.png' %}">
+            <p>
+                Our school is committed to providing a well-rounded education to students from diverse backgrounds. We
+                have a rich history of academic excellence and a supportive community.
+            </p>
+        </section>
+
+        <section class="section">
+            <img src="{% static 'images/classroom.png' %}">
+            <p>
+                Our classrooms are equipped with modern facilities and technology to ensure the best learning experience
+                for our students. Our dedicated teachers work hard to create an engaging and supportive environment.
+            </p>
+        </section>
+
+        <section class="section">
+            <img src="{% static 'images/sports.png' %}">
+            <p>
+                In addition to academics, we offer a wide range of extracurricular activities, including sports, music,
+                and arts, to foster the overall development of our students.
+            </p>
+        </section>
+    </div>
+</body>
+{% endblock %}
+</html>
